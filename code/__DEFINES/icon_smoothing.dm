@@ -1,4 +1,7 @@
-/* smoothing_flags */
+/* smoothing_flags
+BUBBER COMMENT: THIS FILE IS REALLY CURSED AND A LIST OF HAPHAZARDLY PLACED TOGETHER SMOOTHING DEFINES BETWEEN TWO DIFFRENT CODEBASES. BE WARNED.*/
+/// Smoothing system in where adjacencies are calculated and used to build an image by mounting each corner at runtime.
+#define SMOOTH_CORNERS (1<<0)
 /// Smoothing system in where adjacencies are calculated and used to select a pre-baked icon_state, encoded by bitmasking.
 #define SMOOTH_BITMASK (1<<0)
 /// Limits SMOOTH_BITMASK to only cardinal directions, for use with cardinal smoothing
@@ -224,6 +227,9 @@ DEFINE_BITFIELD(smoothing_junction, list(
 
 #define SMOOTH_GROUP_WATER S_OBJ(76) ///obj/effect/abstract/liquid_turf
 //SKYRAT EDIT END
+
+#define SMOOTH_GROUP_WIREWEED S_OBJ(77) // BUBBER EDIT ADDITION
+#define SMOOTH_GROUP_WIREWEED_WALLS S_OBJ(78) // BUBBER EDIT ADDITION
 #define SMOOTH_GROUP_GRAV_FIELD S_OBJ(75)
 #define SMOOTH_GROUP_GIRDER S_OBJ(76)
 #define SMOOTH_GROUP_TEST_WALL S_OBJ(77) // I'm a lazy bum who doesn't want to increment all of these up by 1 ~Lemon
